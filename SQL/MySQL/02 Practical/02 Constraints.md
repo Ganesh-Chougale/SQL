@@ -20,3 +20,22 @@ VALUES ('Ganesh Chougale', 'ganesh@example.com', '9876543210', 24, 'M');
 ```  
 ##### Preview:  
 ![](../../Z_Images/002/01.png)  
+
+## Multiple Values insertions  
+```sql
+INSERT INTO students (name, email, phone, age, gender) VALUES 
+('Gorav Chougale', 'gorav@example.com', '9876523410', 26, 'M'),
+('Vorag Chougale', 'vorag@example.com', '9872343410', 27, 'M'),
+('Dillion Murphy', 'dmat@example.com', '9876523420', 24, 'M') ;
+```  
+##### Preview:  
+![](../../Z_Images/002/02.png)  
+here i tried these with age being under 18. but due to constrainst between 18-30 we only can add number within it. but even the failed attempts the auto-increment happens to assigned field.  
+
+## Filter the field by initial value  
+```sql
+select * from students where name like "g%";
+```  
+##### Preview:  
+![](../../Z_Images/002/03.png)  
+Or we can apply value by filter  
